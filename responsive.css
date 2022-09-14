@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    padding: opx;
+    background-color: grey;
+    color: white;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.section1{
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.section2{
+    background-color: darkcyan;
+    flex-grow: 1;
+}
+
+/*------------640px---------------------*/
+
+@media (max-width:640px){
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .section1{
+        
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+}
